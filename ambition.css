@@ -20,10 +20,11 @@ header p{
 }
 main{}
 
-.ttl{
+
+.ttl{/*course & success h2 color*/
     margin-left: 15px;
     font-family: sans-serif;
-    background-color: orangered;
+    
     width: fit-content;
 }
 /*----------course----------*/
@@ -80,7 +81,7 @@ main{}
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+
     
 }
 .student{
@@ -119,7 +120,24 @@ main{}
 }
 
 
+/*-----photo gallery----------*/
 
+.photo{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+    
+.photo img{
+    width: 200px;
+    border-radius: 10px;
+
+
+}
 
 
 
@@ -141,13 +159,13 @@ main{}
         font-size: 70px;
     }
     .course{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    align-items:center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: orangered;
-    margin: 15px
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        align-items:center;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 15px;
+        
     }
     .wbp{
 
@@ -182,9 +200,10 @@ main{}
     }
     /*----------successful student-----------*/
     .success{
-        width: 100%;
+        width: auto;
         display: block
-        padding: 15px;
+        padding: ;
+        overflow: hide;
         
     }
     .student{
@@ -211,7 +230,7 @@ main{}
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
         text-align: right;
-        margin-left: 10%;
+        margin-left: ;
         color: white;
         font-size: 12px;
     }
@@ -224,5 +243,13 @@ main{}
     }
     .y{
         margin-right: 105px;
+    }
+    .photo{
+        display: block;
+       
+    }
+    .photo img{
+        width: 140px;
+        margin-top: 10px;
     }
 }
