@@ -2,13 +2,38 @@
     margin: 0px;
     padding: 0px;
 }
-main{
+header{
+    
+    background-color: yellow;
+}
+header h1{
+    font-size: 100px;
+    text-align: center;
+
+}
+header p{
+    font-size: 33px;
+    text-align: center;
+    background-color: blue;
+    width: 100%;
+    color: white;
+}
+main{}
+
+.ttl{
+    margin-left: 15px;
+    font-family: sans-serif;
+    background-color: orangered;
+    width: fit-content;
+}
+/*----------course----------*/
+.course{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
     align-items:center;
     margin-left: auto;
     margin-right: auto;
-    background-color: orangered;
+    
     margin: 15px
     
 }
@@ -44,10 +69,80 @@ main{
     padding: 5%;
 }
 
-@media (max-width:500px) {
-    main{
+
+
+
+/*----------successful student-----------*/
+.success{
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    
+}
+.student{
+    width: 350px;
+    background-color: aqua;
+    float: left;
+    height: 100px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 15px;
+    
+    
+}
+.student img{
+    float: left;
+}
+.student2{
+    width: 350px;
+    background-color: aqua;
+    float: left;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    text-align: right;
+    margin: 15px;
+    
+}
+.student2 img{
+    float: right;
+}
+.t{
+    margin-left: 105px;
+}
+.y{
+    margin-right: 105px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px) {
+    header h1{
+        font-size: 70px;
+    }
+    .course{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
     align-items:center;
     margin-left: auto;
     margin-right: auto;
@@ -56,8 +151,7 @@ main{
     }
     .wbp{
 
-        width: 100px ;
-        height:;
+        width: 150px ;
         overflow: hidden;
         box-shadow: 1px 1px 10px black;
         background-color: aliceblue;
@@ -70,9 +164,10 @@ main{
         
     }
     .wbp img{
-        width: 70px;
-        
-        
+        width: 100px;
+        margin-left: 25px;
+        margin-right: auto ;
+        margin-top: 15px;
     } 
     .wbp h2{
         font-size: 20px;
@@ -83,7 +178,52 @@ main{
         font-size: 10px;
         width: 100%;
         border: none;
-        ;
+        
     }
-    
-}
+    /*----------successful student-----------*/
+    .success{
+        width: 100%;
+        display: block
+        padding: 15px;
+        
+    }
+    .student{
+        width: 80%;
+        background-color: rgb(12, 5, 83);
+        float: left;
+        height: 70px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        margin-left: 10%;
+        color: aliceblue;
+        font-size: 12px;
+        
+    }
+    .student img{
+        float: left;
+        height: 70px;
+    }
+    .student2{
+        width: 80%;
+        background-color: rgb(11, 84, 84);
+        float: left;
+        height: 70px;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        text-align: right;
+        margin-left: 10%;
+        color: white;
+        font-size: 12px;
+    }
+    .student2 img{
+        float: right;
+        height: 70px;
+    }
+    .t{
+        margin-left: 105px;
+    }
+    .y{
+        margin-right: 105px;
+    }
+        
+    }
