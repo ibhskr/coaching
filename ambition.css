@@ -81,6 +81,7 @@ main{}
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: antiquewhite;
 
     
 }
@@ -138,7 +139,14 @@ main{}
 
 
 }
-
+footer{
+    background-color: rgb(25, 19, 40);
+    
+}
+footer img{
+    width: 250px;
+    margin: 15px;
+}
 
 
 
@@ -204,10 +212,10 @@ main{}
     }
     /*----------successful student-----------*/
     .success{
-        width: auto;
+        width:auto;
         display: block
         padding: ;
-        overflow: hide;
+        background-color: white;
         
     }
     .student{
@@ -217,7 +225,7 @@ main{}
         height: 70px;
         border-bottom-right-radius: 50px;
         border-top-right-radius: 50px;
-        margin-left: 10%;
+        margin-left: 5%;
         margin-right: 5%;
         color: aliceblue;
         font-size: 12px;
@@ -236,7 +244,7 @@ main{}
         border-top-left-radius: 50px;
         text-align: right;
         margin-left: 5%;
-        margin-right: 10%;
+        margin-right: 5%%;
         color: white;
         font-size: 12px;
     }
@@ -250,12 +258,19 @@ main{}
     .y{
         margin-right: 105px;
     }
+    /*---photo----*/
     .photo{
         display: block;
+        background-color: rgba(245, 222, 179, 0.4);
        
     }
     .photo img{
-        width: 140px;
-        margin-top: 10px;
+        width: 46%;
+        margin: 1.5%;
     }
+    footer{
+        
+    }
+
+   
 }
