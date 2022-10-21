@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+
 }
 header{
     
@@ -18,7 +19,9 @@ header p{
     width: 100%;
     color: white;
 }
-main{}
+main{
+    overflow: hidden;
+}
 
 
 .ttl{/*course & success h2 color*/
@@ -50,8 +53,6 @@ main{}
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    
-    
 }
 .wbp img{
     width: 120px;
@@ -69,8 +70,15 @@ main{}
     border: none;
     padding: 5%;
 }
-
-
+.wbp:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.wbp button:hover{
+    background-color: green;
+    transition: 0.5s;
+    
+}
 
 
 /*----------successful student-----------*/
@@ -139,13 +147,59 @@ main{}
 
 
 }
+
+.faculty{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.kallal{
+    background-color: aquamarine;
+    height: 150px;
+    
+}
+.kallal img{
+    height: 150px;
+    float: right;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.kg{
+    text-align: right;
+    margin-right: 175px;
+    margin-top: 40px;
+}
+.naha{
+    background-color: aqua;
+    height: 150px;
+
+}
+.naha img{
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.dn{
+    margin-left: 175px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
 footer{
     background-color: rgb(25, 19, 40);
     
 }
 footer img{
     width: 250px;
-    margin: 15px;
+    margin-left:10%;
+    margin-top: 10PX;
 }
 
 
@@ -268,9 +322,53 @@ footer img{
         width: 46%;
         margin: 1.5%;
     }
+
+    /*---------faculty------*/
+    .faculty{
+        display:block;
+        
+    
+    }
+    
+    .kallal{
+        background-color: aquamarine;
+        height: 70px;
+        
+    }
+    .kallal img{
+        height: 70px;
+        float: right;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .kg{
+        text-align: right;
+        margin-right: 75px;
+        margin-top: 40px;
+    }
+    .naha{
+        background-color: aqua;
+        height: 70px;
+    
+    }
+    .naha img{
+        height: 70px;
+        float: left;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+    .dn{
+        margin-left: 90px;
+        
+    }
+    
+    
     footer{
         
     }
 
-   
+    footer img{
+        width: 50%;
+        margin-left:25%;
+    }
 }
